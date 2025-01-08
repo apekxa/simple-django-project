@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>food-ordering app</title>
+    <link rel="stylesheet" href="{% static 'foodapp/style.css' %}">
+</head>
+<body>
+  <header>
+      <div class="content">
+              <div class="img">
+              <img src="https://png.pngtree.com/png-vector/20220708/ourmid/pngtree-fast-food-logo-png-image_5763171.png" alt="loading" width="100px"><h1>Food-Ordering-App</h1>
+              </div>
+              <div class="opt">
+                  <ul>
+                      <li>
+                          <a href="{%url "foodapp:menu_food"%}"> Menu </a>
+                      </li>
+
+                      <li>
+                          <a href="{%url "foodapp:gallery_food"%}">Gallery</a>
+                      </li>
+
+                      <li>
+                          <a href="{%url "foodapp:food_timing"%}">Timings</a>
+                      </li>
+
+                      <li>
+                          <a href="{%url "foodapp:food_contact"%}">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+          <div class="log">
+                  <button>View Orders</button>
+                  <button>My Cart</button>
+                  <button>Logout</button>
+          </div>
+      </div>
+  </header>
+    <section style="background-color:rgb(255, 207, 207)">
+        <div class="eat"><h1>Eat What Makes You Happy</h1></div>
+        <div class="cards">
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/chicken-burger-wooden-board-side-view_141793-2338.jpg?uid=R174207853&ga=GA1.1.160924257.1727589346&semt=ais_hybrid" alt="Loading" width="300px" height="250px">
+                <div class="eat1"><h2>Burger</h2></div>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/chicken-skewers-with-slices-sweet-peppers-dill_2829-18813.jpg?t=st=1735403208~exp=1735406808~hmac=f22bac0dc929dfc3b21cc6e57037c9eb941c3405da96923d61db900082f7046a&w=996" alt="Loading"width="300px" height="250px">
+                <div class="eat1"><h2>Grils</h2></div>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/close-up-sweets-handmade-handmade-sweets-from-nuts-dried-fruits-honey-dark-wooden-table-horizontal_176474-2460.jpg?t=st=1735402990~exp=1735406590~hmac=069dc869a6a779a8b93849ae38ed2a4fccfe8ec956a459e5c20331cbafd401f5&w=826" alt="Loading"width="300px" height="250px">
+                <div class="eat1"><h2>Sweets</h2></div>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/cold-lemon-kiwi-drink-table_140725-7000.jpg?t=st=1735403179~exp=1735406779~hmac=f59278e6c2c07ee9895e33b385b7c171e1784f7b777f7a5c72199535db20ef5b&w=740" alt="Loading"width="300px" height="250px">
+                <div class="eat1"><h2>Juices</h2></div>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/fresh-gourmet-meal-grilled-beef-salad-generated-by-ai_188544-10126.jpg?uid=R174207853&ga=GA1.1.160924257.1727589346&semt=ais_hybrid" alt="Loading"width="300px" height="250px">
+                <div class="eat1"><h2>Salad</h2></div>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/noodles-prepared-with-chicken-peppers-sesame-seeds-sauce_141793-878.jpg?t=st=1735403128~exp=1735406728~hmac=f8f1b4abf4c71bfa9494def9d71768322fd066bc20d3e532e6e601f61c253d26&w=740" alt="Loading"width="300px" height="250px">
+                <div class="eat1"><h2>Noodles</h2></div>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/red-lentil-soup-with-slice-lemon-breadcrumbs_140725-1001.jpg?t=st=1735403227~exp=1735406827~hmac=999aa295a554aa241b415a940cf3dd5810e5208f5a5756e9aa2f71666781cb66&w=740" alt="Loading"width="300px" height="250px">
+                <div class="eat1"><h2>Soup</h2></div>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/top-view-mixed-pizza-with-tomato-black-olive-melted-cheese_140725-10787.jpg?t=st=1735402838~exp=1735406438~hmac=3b95dde43ed6a5a530848827da4d3a56ef5206c22e0752e31a732b8fbe3cb3bc&w=740" alt="Loading"width="300px" height="250px">
+                <div class="eat1"><h2>Pizza</h2></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
